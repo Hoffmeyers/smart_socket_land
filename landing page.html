@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Switches - Easy Home Electronics</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and base styles */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --color-primary: #FF5722; /* Vibrant Orange for accent */
+            --color-dark: #1F2937; /* Dark Slate Background */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark);
+            color: #E5E7EB; /* Light gray text */
+            line-height: 1.6;
+        }
+        .text-neon-glow {
+            text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tight text-white">
+                <span class="text-[var(--color-primary)]">EASY</span> HOME
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-300 hover:text-[var(--color-primary)] transition duration-300">Features</a>
+                <a href="#demo" class="text-gray-300 hover:text-[var(--color-primary)] transition duration-300">Demo</a>
+                <a href="#impact" class="text-gray-300 hover:text-[var(--color-primary)] transition duration-300">Impact</a>
+            </nav>
+            <a href="#contact" class="bg-[var(--color-primary)] hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 hidden sm:block">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="relative pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden bg-gray-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-6xl sm:text-7xl font-extrabold leading-tight tracking-tighter mb-4 text-white">
+                        <span class="text-8xl md:text-9xl text-[var(--color-primary)] text-neon-glow block">SMART</span>
+                        Switches
+                    </h1>
+                    <p class="text-xl sm:text-2xl mb-8 text-gray-300">
+                        Reimagining the Future, One Idea at a Time.
+                    </p>
+                    <p class="text-2xl font-bold mb-10 text-white">
+                        Stop Wasting Electricity. <span class="text-teal-400">Start Saving Instantly.</span>
+                    </p>
+                    <a href="#features" class="inline-block bg-[var(--color-primary)] hover:bg-orange-700 text-white text-lg font-bold py-4 px-10 rounded-xl shadow-2xl shadow-[var(--color-primary)]/50 transition duration-300 transform hover:scale-105">
+                        Get Smart, Start Saving
+                    </a>
+                </div>
+
+                <!-- Product Image -->
+                <div class="flex justify-center md:justify-end">
+                    <!-- Hero Image: Using the black model with USB ports -->
+                <img src="1.png"
+                    alt="Easy Home Smart Switch with USB ports"
+                    class="w-full max-w-sm rounded-3xl shadow-2xl transition duration-500 hover:rotate-2 hover:scale-105"
+                    onerror="this.onerror=null; this.src='https://placehold.co/400x500/1F2937/E5E7EB?text=1.png+not+found'"
+                >
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Problem/Solution Section -->
+        <section id="problem" class="py-20 md:py-24 bg-[var(--color-dark)]">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-white mb-4">
+                    The <span class="text-[var(--color-primary)]">Hidden Cost</span> of Convenience
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
+                    Did you know? <strong>Over 30% of electricity</strong> purchased for homes and offices is wasted because appliances are left ON and neglected.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-10">
+                    <div class="p-8 bg-gray-800 rounded-2xl shadow-xl border border-gray-700">
+                        <svg class="w-12 h-12 text-[var(--color-primary)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">30% Power Wasted</h3>
+                        <p class="text-gray-400">Reduce waste by automatically shutting off idle devices.</p>
+                    </div>
+                    <div class="p-8 bg-gray-800 rounded-2xl shadow-xl border border-gray-700">
+                        <svg class="w-12 h-12 text-teal-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.192-2.058-.582-3.016z"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Appliance Health</h3>
+                        <p class="text-gray-400">Automatic power cut-off protects your valuable devices from electrical faults.</p>
+                    </div>
+                    <div class="p-8 bg-gray-800 rounded-2xl shadow-xl border border-gray-700">
+                        <svg class="w-12 h-12 text-[var(--color-primary)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-1a2 2 0 00-2 2v1m-4 1h4m-4 0v-4a2 2 0 012-2h2a2 2 0 012 2v1a2 2 0 002 2h1m-10-4h10m-10 0a2 2 0 01-2-2v-4a2 2 0 012-2h10a2 2 0 012 2v4a2 2 0 01-2 2h-1"></path></svg>
+                        <h3 class="text-2xl font-bold mb-3 text-white">Visibility & Control</h3>
+                        <p class="text-gray-400">Know exactly what is consuming your power in real-time via the mobile app.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Features Section -->
+        <section id="features" class="py-20 md:py-24 bg-gray-900/70">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center mb-16 text-white">
+                    <span class="text-teal-400">Transform</span> Any Device into a Smart Device
+                </h2>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border-b-4 border-[var(--color-primary)]">
+                        <div class="text-3xl font-extrabold text-[var(--color-primary)] mb-2">1.</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Real-time Energy Monitoring</h3>
+                        <p class="text-gray-400">Instantly measure voltage and current. See power consumption data via the web application to identify waste.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border-b-4 border-teal-400">
+                        <div class="text-3xl font-extrabold text-teal-400 mb-2">2.</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Remote Control via Phone</h3>
+                        <p class="text-gray-400">Plug & Play setup. Control the appliance remotely with the touch of a button from anywhere in the world.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border-b-4 border-[var(--color-primary)]">
+                        <div class="text-3xl font-extrabold text-[var(--color-primary)] mb-2">3.</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Intelligent Home Automation</h3>
+                        <p class="text-gray-400">The smart switch automatically switches off appliances if they are left idle for a long period.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border-b-4 border-teal-400">
+                        <div class="text-3xl font-extrabold text-teal-400 mb-2">4.</div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Critical Appliance Protection</h3>
+                        <p class="text-gray-400">In case of electrical faults, the switch automatically cuts off power, protecting your device from disaster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Product Demo / Gallery Section -->
+        <section id="demo" class="py-20 md:py-24 bg-[var(--color-dark)]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-center mb-16 text-white">
+                    Product Showcase: <span class="text-[var(--color-primary)]">Meet the Smart Socket</span>
+                </h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <!-- Local Image 1 -->
+                    <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(255,87,34,0.7)]">
+                        <img src="1.png"
+                             alt="Product Image 1"
+                             class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/1F2937/E5E7EB?text=1.png+not+found'"
+                        >
+                    </div>
+
+                    <!-- Local Image 2 -->
+                    <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(65,190,186,0.7)]">
+                        <img src="2.png"
+                             alt="Product Image 2"
+                             class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/1F2937/E5E7EB?text=2.png+not+found'"
+                        >
+                    </div>
+
+                    <!-- Local Image 3 -->
+                    <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(255,87,34,0.7)]">
+                        <img src="3.png"
+                             alt="Product Image 3"
+                             class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/1F2937/E5E7EB?text=3.png+not+found'"
+                        >
+                    </div>
+
+                    <!-- Local Image 4 -->
+                    <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(65,190,186,0.7)]">
+                        <img src="4.png"
+                             alt="Product Image 4"
+                             class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/1F2937/E5E7EB?text=4.png+not+found'"
+                        >
+                    </div>
+
+                    <!-- Local Image 5 -->
+                    <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(255,87,34,0.7)]">
+                        <img src="5.jpeg"
+                             alt="Product Image 5"
+                             class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/1F2937/E5E7EB?text=5.jpeg+not+found'"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Market Impact & CTA Section -->
+        <section id="impact" class="py-20 md:py-24 bg-[var(--color-primary)]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-white mb-6">
+                    Join the Movement: The <span class="text-gray-900">Future of Power</span>
+                </h2>
+                <p class="text-2xl font-semibold text-white/90 mb-8">
+                    About $7.3 Million is lost monthly due to power wastage in homes. Be part of the solution.
+                </p>
+                <div class="bg-white/10 p-6 rounded-xl mb-10 shadow-xl">
+                    <p class="text-4xl font-extrabold text-white mb-2">
+                        $20M Industry <span class="text-teal-200">and Growing.</span>
+                    </p>
+                    <p class="text-lg text-white/80">
+                        Help us build a greater, more efficient Uganda.
+                    </p>
+                </div>
+                <a href="mailto:info@easyhome.com" class="inline-block bg-white hover:bg-gray-100 text-[var(--color-primary)] text-lg font-bold py-4 px-10 rounded-xl shadow-2xl transition duration-300 transform hover:scale-105">
+                    Contact Sales & Distribution
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-gray-900/60 border-t border-gray-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold mb-6 text-white">Contact Us</h2>
+                <p class="text-gray-300 mb-8">Leave your email and message below — responses are saved to our Google Form.</p>
+
+                <!-- Embedded Google Form (responsive) -->
+                <div class="w-full bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+                    <div class="aspect-[16/9] sm:aspect-[4/3] md:aspect-[16/9]">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpdR8hkyOQUt4h-tF6lQNG-cFUAPIlX14U6GAqVxSB7uh8-Q/viewform?embedded=true" 
+                                class="w-full h-full border-0" 
+                                frameborder="0" marginheight="0" marginwidth="0" 
+                                title="Contact Form - Google Form">Loading…</iframe>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-400 mt-4">If the form does not appear, <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpdR8hkyOQUt4h-tF6lQNG-cFUAPIlX14U6GAqVxSB7uh8-Q/viewform" target="_blank" rel="noopener noreferrer" class="text-[var(--color-primary)] underline">open the contact form in a new tab</a>.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 pt-10 pb-6 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xl font-bold text-white mb-2">Easy Home Electronics</p>
+            <p class="text-sm text-gray-400">&copy; 2025 SMART Switches. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Visit our website: <a href="http://www.easyhome.com" class="text-[var(--color-primary)] hover:underline">www.easyhome.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
