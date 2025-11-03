@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name": "smartswitch-site",
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
-  ]
-}
